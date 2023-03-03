@@ -18,6 +18,8 @@ CREATE
 (shatabdiexp)-[:STOPS_AT {time:"05:30 PM"}]-> (BLR),
 (vandebharatexp)-[:STOPS_AT {time:"12:00 AM"}]-> (BLR),
 
+(vandebharatexp)-[:VIA {time:"12:00 AM"}]-> (BLR),
+
 (kovaiexp)-[:STARTS_AT {time:"06:15 AM"}]-> (MAS),
 (shatabdiexp)-[:STARTS_AT {time:"08:30 AM"}]-> (SA),
 (vandebharatexp)-[:STARTS_AT {time:"03:00 PM"}]-> (MAS);
